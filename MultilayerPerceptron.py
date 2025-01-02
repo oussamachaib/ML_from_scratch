@@ -90,7 +90,7 @@ for i in range(n_batch):
 
     # Output layer
     Z2 = np.dot(A1,W2) + b2
-    A2 = softmax(Z2) # Your predicted probabilities (y_hat)
+    A2 = softmax(Z2) # predicted probabilities (y_hat)
 
     # Loss function
     y = np.eye(N = n, M = k)[y_batch]
